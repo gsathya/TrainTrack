@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TrainTrack!</string>
+    <string name="app_name">Train Track</string>
+    <string name="enterSource">Enter Source</string>
+    <string name="enterDestination">Enter Destination</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+</resources>

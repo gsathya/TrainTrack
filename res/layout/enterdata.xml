@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/textView1" android:text="Enter Source Station" android:layout_gravity="center" android:padding="20dip" android:textSize="25dip"></TextView>
+    <AutoCompleteTextView android:text="" android:id="@+id/sourceinput" android:layout_height="wrap_content" android:layout_width="200dip" android:layout_gravity="center"></AutoCompleteTextView>
+    <TextView android:id="@+id/textView2" android:text="Enter Time" android:layout_gravity="center" android:layout_width="100dip" android:layout_height="30dip" android:textSize="20dip"></TextView>
+    <EditText android:text="" android:id="@+id/timeinput" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_width="200dip"></EditText>
+    <Button android:id="@+id/submitButton" android:text="Submit" android:layout_gravity="center" android:layout_width="100dip" android:layout_height="70dip"></Button>
+</LinearLayout>

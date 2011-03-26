@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:background="#170A03">
+    <ImageView android:id="@+id/traintracktext" android:layout_height="wrap_content" android:src="@drawable/traintrackertext" android:layout_gravity="center" android:layout_width="250dip"></ImageView>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1">
+        <TextView android:text=""  android:textColor="#ffffff" android:id="@+id/dispdest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:padding="10dip" android:layout_marginRight="35dip" android:textSize="20dip"></TextView>
+        <TextView android:padding="10dip" android:textColor="#ffffff" android:id="@+id/dispsource" android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:layout_alignParentTop="true" android:layout_marginLeft="35dip" android:textSize="20dip"></TextView>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/helpscrollview" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">    
+		<LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="3px">
+<TextView android:text="sampletext" 	android:textColor="#bd931d" android:id="@+id/showTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dip" android:layout_gravity="left" android:typeface="sans" android:padding="4dip" android:layout_marginLeft="30dip"></TextView>
+
+			</LinearLayout>
+		</ScrollView>			
+</LinearLayout>
