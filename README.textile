@@ -28,6 +28,6 @@ A point to note, I have used flat files instead of a db file. The reason for tha
 # I didn't need any security. (It's for my personal use)
 # Creating a db helper class was too much of a hassle.
 
-Also, This schedule includes only one was transport from _beach_ -> _velachery_ and not vice versa. I would shortly add this as well.
+Also, This schedule includes only one track from _beach_ -> _velachery_ and not vice versa. I would shortly add this as well.
 
 fn1. Please free to download and use the app. Any comments would be welcome.
