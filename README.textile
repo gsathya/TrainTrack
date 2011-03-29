@@ -19,7 +19,9 @@ h2. Installation
 # Open the App
 
 h2. Usage
+
 h3. Fav
+
 Just type your favourite station in the source and destination text box and click on the fav icon !
 
 h2. Tested
