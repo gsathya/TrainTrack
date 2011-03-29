@@ -48,6 +48,7 @@ public class FindTime extends Activity {
 	         try {
 	        	 BufferedReader br = new BufferedReader(new FileReader(file));
 	        	 String line;
+	        	 
 
 	        	 while ((line = br.readLine()) != null) {
 	        		 text.append(line);

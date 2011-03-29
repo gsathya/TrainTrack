@@ -11,9 +11,8 @@
         <ImageView android:id="@+id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tracktext" android:layout_alignParentRight="true" android:padding="10dip" android:layout_marginRight="15dip" android:layout_marginTop="5dip"></ImageView>
     </RelativeLayout>
     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_gravity="center" android:padding="10dip">
-        <ImageButton android:src="@drawable/alarm" android:background="@null" android:layout_height="wrap_content" android:id="@+id/imageButton1" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_alignParentRight="true" android:paddingRight="25dip"></ImageButton>
-        <ImageButton android:src="@drawable/fav_icon" android:background="@null" android:layout_height="wrap_content" android:id="@+id/imageButton2" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"></ImageButton>
-        <Button android:background="@drawable/home_icon" android:layout_height="wrap_content" android:id="@+id/homebutton" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:paddingLeft="25dip" android:layout_marginLeft="20dip"></Button>
+        <Button android:background="@drawable/home_icon" android:layout_height="wrap_content" android:id="@+id/homeButton" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_marginLeft="60dip"></Button>
+        <Button android:background="@drawable/fav_icon" android:layout_height="wrap_content" android:id="@+id/favButton" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginRight="60dip"></Button>
     </RelativeLayout>
     <ImageView android:id="@+id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sourcetext" android:layout_gravity="center"></ImageView>
     <AutoCompleteTextView android:id="@+id/enterSource" android:text="" android:padding="10dip" android:layout_gravity="center" android:layout_width="250dip" android:layout_height="50dip"></AutoCompleteTextView>

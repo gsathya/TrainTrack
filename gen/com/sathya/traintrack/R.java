@@ -33,16 +33,15 @@ public final class R {
     public static final class id {
         public static final int dispdest=0x7f050007;
         public static final int dispsource=0x7f050008;
-        public static final int enterDestination=0x7f050015;
-        public static final int enterSource=0x7f050013;
-        public static final int findButton=0x7f050016;
+        public static final int enterDestination=0x7f050014;
+        public static final int enterSource=0x7f050012;
+        public static final int favButton=0x7f050010;
+        public static final int findButton=0x7f050015;
         public static final int helpscrollview=0x7f050009;
-        public static final int homebutton=0x7f050011;
-        public static final int imageButton1=0x7f05000f;
-        public static final int imageButton2=0x7f050010;
+        public static final int homeButton=0x7f05000f;
         public static final int imageView1=0x7f05000c;
-        public static final int imageView2=0x7f050014;
-        public static final int imageView3=0x7f050012;
+        public static final int imageView2=0x7f050013;
+        public static final int imageView3=0x7f050011;
         public static final int imageView4=0x7f05000d;
         public static final int imageView5=0x7f05000e;
         public static final int relativeLayout1=0x7f050006;

@@ -1,14 +1,26 @@
 package com.sathya.traintrack;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class TrainTrack extends Activity {
     
@@ -23,7 +35,7 @@ public class TrainTrack extends Activity {
 			"Taramani",
 			"Thiruvanmiyur",
 			"Indra Nagar",
-			"Kasturba Nagar",
+			"Kasturbai Nagar",
 			"Kotturpuram",
 			"Greenways Road",
 			"Mandaveli",
@@ -49,8 +61,8 @@ public class TrainTrack extends Activity {
         final ArrayAdapter<String> stationsAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,STATIONS);
         
         
-        AutoCompleteTextView getSourceStation = (AutoCompleteTextView) findViewById (R.id.enterSource);
-        AutoCompleteTextView getDestinationStation= (AutoCompleteTextView) findViewById (R.id.enterDestination);
+        final AutoCompleteTextView getSourceStation = (AutoCompleteTextView) findViewById (R.id.enterSource);
+        final AutoCompleteTextView getDestinationStation= (AutoCompleteTextView) findViewById (R.id.enterDestination);
 
         getSourceStation.setThreshold(1);
         getSourceStation.setAdapter(stationsAdapter);
@@ -81,18 +93,29 @@ public class TrainTrack extends Activity {
 				
 			});
         
-        /*
-          Button homeButton = (Button) findViewById(R.id.homebutton);
-         
         
+        Button homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				insertData();
+				findFav();
+				getSourceStation.setText(source);
+				getDestinationStation.setText(destination);
+			
 			}
 		});
-        */
+        
+        Button favButton = (Button) findViewById(R.id.favButton);
+        favButton.setOnClickListener(new View.OnClickListener(){
+        	public void onClick(View v){
+        		writeFav();
+        		showToast();
+        		}
+        });
+    	  
+         
+  
         Button findButton1 = (Button) findViewById(R.id.findButton);
         
         findButton1.setOnClickListener(new View.OnClickListener() {
@@ -105,13 +128,25 @@ public class TrainTrack extends Activity {
 		});		
     }
     
-    /*
-      private void insertData(){
-     
-    	Intent insertDataEntry = new Intent(this,InsertData.class);
-    	startActivity(insertDataEntry);
+    public void findFav(){
+    	SharedPreferences prefs = getSharedPreferences("locationPref", MODE_PRIVATE);
+    	source = prefs.getString("source", ""); 
+    	destination = prefs.getString("destination", "");
     }
-    */
+    
+    public void writeFav(){
+
+    	SharedPreferences prefs = getSharedPreferences("locationPref", MODE_PRIVATE);
+    	Editor mEditor = prefs.edit(); mEditor.putString("source",source); 
+    	mEditor.putString("destination",destination);
+    	mEditor.commit();
+
+    }
+    
+    public void showToast() {
+		Toast.makeText(this, "Favourites have been set", Toast.LENGTH_SHORT).show();
+		
+	}
     
     private void queryDb(){
 	

@@ -8,9 +8,10 @@
   android:background="#170A03">
     <ImageView android:id="@+id/traintracktext" android:layout_height="wrap_content" android:src="@drawable/traintrackertext" android:layout_gravity="center" android:layout_width="250dip"></ImageView>
     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1">
-        <TextView android:text=""  android:textColor="#ffffff" android:id="@+id/dispdest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:padding="10dip" android:layout_marginRight="35dip" android:textSize="20dip"></TextView>
-        <TextView android:padding="10dip" android:textColor="#ffffff" android:id="@+id/dispsource" android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:layout_alignParentTop="true" android:layout_marginLeft="35dip" android:textSize="20dip"></TextView>
+        <TextView android:text=""  android:textColor="#ffffff" android:id="@+id/dispdest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:padding="10dip" android:layout_marginRight="20dip" android:textSize="20dip"></TextView>
+        <TextView android:padding="10dip" android:textColor="#ffffff" android:id="@+id/dispsource" android:text="" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="left" android:layout_alignParentTop="true" android:layout_marginLeft="20dip" android:textSize="20dip"></TextView>
     </RelativeLayout>
+    <TextView android:layout_width="wrap_content" android:textColor="#bd931d" android:text="Train Arrival Time:" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_gravity="center" android:textSize="17dip"></TextView>
     <ScrollView android:id="@+id/helpscrollview" 
 		android:orientation="vertical"
 		android:layout_width="fill_parent" 
@@ -20,7 +21,7 @@
 		    android:layout_width="fill_parent"
 		    android:layout_height="fill_parent"
 		    android:padding="3px">
-<TextView android:text="sampletext" 	android:textColor="#bd931d" android:id="@+id/showTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dip" android:layout_gravity="left" android:typeface="sans" android:padding="4dip" android:layout_marginLeft="30dip"></TextView>
+<TextView android:text="sampletext" 	android:textColor="#bd931d" android:id="@+id/showTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dip" android:layout_gravity="center" android:typeface="sans" android:padding="4dip" ></TextView>
 
 			</LinearLayout>
 		</ScrollView>			
