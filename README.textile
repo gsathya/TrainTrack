@@ -18,6 +18,10 @@ h2. Installation
 # Move the files in /time directory to your sdcard
 # Open the App
 
+h2. Usage
+h3. Fav
+Just type your favourite station in the source and destination text box and click on the fav icon !
+
 h2. Tested
 # Nexus One
 # HTC Legend
