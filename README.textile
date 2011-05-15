@@ -2,7 +2,7 @@ h1. Train Track
 
 Train Track is an android app which lists the train schedules for the Chennai MRTS. 
 
-*Note : This app was created for personal use. I have not done extended testing.*
+*Note : This app was created for personal use. I have not done -extended- any testing.*
 
 Also this was hacked up in a weekend (under 32 hours to be specific). 
 
