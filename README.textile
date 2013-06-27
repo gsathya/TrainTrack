@@ -6,11 +6,6 @@ Train Track is an android app which lists the train schedules for the Chennai MR
 
 Also this was hacked up in a weekend (under 32 hours to be specific). 
 
-h2. Screenshots
-!http://www.gsathya.in/traintrack1.png(TrainTrack1)!
-!http://www.gsathya.in/traintrack3.png(TrainTrack3)!
-!http://www.gsathya.in/traintrack2.png(TrainTrack2)!
-
 h2. Installation
 
 # Download "TrainTrack.apk":https://github.com/downloads/gsathya/TrainTrack/Train%20Track.apk 
